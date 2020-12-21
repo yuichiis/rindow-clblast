@@ -58,7 +58,7 @@ And then download binaries of CLBlast for windows from https://github.com/CNugte
 
 ```shell
 C:\tmp>copy rindow_opencl.dll /path/to/php-installation-path/ext
-C:\tmp>echo extension=rindow_openblas.dll >> /path/to/php-installation-path/php.ini
+C:\tmp>echo extension=rindow_opencl.dll >> /path/to/php-installation-path/php.ini
 C:\tmp>PATH %PATH%;/path/to/miniconda3-directory/Library/bin;/path/to/CLBlast-1.x.x-Windows-x64/lib
 ```
 
