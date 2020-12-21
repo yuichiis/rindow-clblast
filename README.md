@@ -48,6 +48,20 @@ For execution
 - Download flang.dll binaries from https://github.com/rindow/rindow-openblas-binaries
 - Extract and install to php extension and some directory
 
+### Install and setup rindow_opencl and CLBlast
+
+In order to execute rindow_clblast, you need CLBlast and the rindow_opencl.
+
+Please install rindow_opencl and CLBlast to execute.
+See https://github.com/rindow/rindow-opencl/ for more information.
+And then download binaries of CLBlast for windows from https://github.com/CNugteren/CLBlast/releases and extract and set path to DLLs.
+
+```shell
+C:\tmp>copy rindow_opencl.dll /path/to/php-installation-path/ext
+C:\tmp>echo extension=rindow_openblas.dll >> /path/to/php-installation-path/php.ini
+C:\tmp>PATH %PATH%;/path/to/miniconda3-directory/Library/bin;/path/to/CLBlast-1.x.x-Windows-x64/lib
+```
+
 ### Exports OpenCL binding library
 C:\visual\studio\path>vcvars64 -vcvars_ver=14.16
 C:\visual\studio\path>cd /path/to/OpenCL

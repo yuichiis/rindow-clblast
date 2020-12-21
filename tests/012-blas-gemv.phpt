@@ -40,7 +40,7 @@ $openblas->gemv(BLAS::RowMajor,BLAS::NoTrans,$m,$n,
     $hostBufferA, 0, $n,
     $hostBufferX, 0, 1,
     $beta,
-    $testTruesR,  0, 1,
+    $testTruesR,  0, 1
 );
 
 $bufferA = new Rindow\OpenCL\Buffer($context,intval($m*$n*32/8),
