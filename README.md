@@ -32,7 +32,8 @@ How to setup pre-build binaries
 You can download and use pre-built Windows binaries.
 Download the binary for your version of PHP.
 
-- https://github.com/rindow/rindow-openblas-binaries
+- https://github.com/rindow/rindow-openblas/releases
+- https://github.com/xianyi/OpenBLAS/releases
 - https://github.com/rindow/rindow-opencl/releases
 - https://github.com/rindow/rindow-clblast/releases
 - https://github.com/CNugteren/CLBlast/releases
@@ -42,11 +43,11 @@ Please download the following two binaries and extract.
 - The PHP extension of rindow-opencl that matches the php version.
 - The PHP extension of rindow-openblas that matches the php version.
 - The PHP extension of rindow-clblast that matches the php version.
-- DLL of flang library.
+- DLL of OpenBLAS library.
 - DLL of CLBlast library.
 
 Copy the shared library to the PHP extension directory and set it in php.ini.
-And flang DLL's path to Windows PATH environment variable.
+And OpenBLAS DLL's path to Windows PATH environment variable.
 
 ```shell
 C:\tmp>copy rindow_openblas.dll /path/to/php-installation-path/ext
@@ -55,7 +56,7 @@ C:\tmp>copy rindow_clblast.dll /path/to/php-installation-path/ext
 C:\tmp>echo extension=rindow_openblas.dll >> /path/to/php-installation-path/php.ini
 C:\tmp>echo extension=rindow_opencl.dll >> /path/to/php-installation-path/php.ini
 C:\tmp>echo extension=rindow_clblast.dll >> /path/to/php-installation-path/php.ini
-C:\tmp>PATH %PATH%;/path/to/flang/miniconda3-directory/Library/bin;/path/to/CLBlast-Library/lib
+C:\tmp>PATH %PATH%;/path/to/OpenBLAS/bin;/path/to/CLBlast-Library/lib
 C:\tmp>cd /same/app/directory
 C:\app\dir>composer require rindow/rindow-math-matrix
 ```
@@ -82,8 +83,8 @@ Developing PHP extensions from php7.2 to php7.4 requires VC15 instead of the lat
 - Extract to /path/to/Rindow-OpenCL
 
 For execution
-- Download Rindow-OpenBLAS binaries from https://github.com/rindow/rindow-openblas-binaries
-- Download flang.dll binaries from https://github.com/rindow/rindow-openblas-binaries
+- Download Rindow-OpenBLAS binaries from https://github.com/rindow/rindow-openblas/releases
+- Download OpenBLAS binaries from https://github.com/xianyi/OpenBLAS/releases
 - Extract and install to php extension and some directory
 
 ### Install and setup rindow_opencl and CLBlast
