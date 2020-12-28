@@ -98,7 +98,7 @@ And then download binaries of CLBlast for windows from https://github.com/CNugte
 ```shell
 C:\tmp>copy rindow_opencl.dll /path/to/php-installation-path/ext
 C:\tmp>echo extension=rindow_opencl.dll >> /path/to/php-installation-path/php.ini
-C:\tmp>PATH %PATH%;/path/to/miniconda3-directory/Library/bin;/path/to/CLBlast-1.x.x-Windows-x64/lib
+C:\tmp>PATH %PATH%;/path/to/OpenBLAS-directory/bin;/path/to/CLBlast-1.x.x-Windows-x64/lib
 ```
 
 ### Exports OpenCL binding library
@@ -125,7 +125,7 @@ See https://github.com/rindow/rindow-openblas/ for more information.
 ```shell
 C:\tmp>copy rindow_openblas.dll /path/to/php-installation-path/ext
 C:\tmp>echo extension=rindow_openblas.dll >> /path/to/php-installation-path/php.ini
-C:\tmp>PATH %PATH%;/path/to/miniconda3-directory/Library/bin
+C:\tmp>PATH %PATH%;/path/to/OpenBLAS/bin
 ```
 
 ### start php-sdk for target PHP version
@@ -144,11 +144,11 @@ C:\php-sdk>phpsdk-vc15-x64.bat
 ### Build
 
 ```shell
-$ PATH %PATH%;/path/to/miniconda3/bin;/path/to/CLBlast-devel-directory/lib
+$ PATH %PATH%;/path/to/OpenBLAS/bin;/path/to/CLBlast-devel-directory/lib
 $ cd /path/to/here
 $ composer update
 $ /path/to/php-devel-pack-7.x.x-Win32-VC15-x64/phpize.bat
-$ configure --enable-rindow_clblast --with-prefix=/path/to/php-installation-path --with-opencl=/path/to/OpenCL-devel-directory --with-clblast=/path/to/CLBlast-devel-directory --with-rindow_opencl=/path/to/Rindow-OpenCL-devel-directory
+$ configure --enable-rindow_clblast --with-prefix=/path/to/php-installation-path --with-opencl=/path/to/OpenCL-devel-directory --with-clblast=/path/to/CLBlast-devel-directory --with-rindow_opencl=/path/to/Rindow-OpenCL-sources-directory
 $ nmake clean
 $ nmake
 $ nmake test
