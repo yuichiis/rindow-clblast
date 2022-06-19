@@ -12,7 +12,7 @@ Requirements
 - PHP7.2 or PHP7.3 or PHP7.4 or PHP8.0 or PHP8.1
 - interop-phpobjects/polite-math 1.0.4 or later
 - LinearBuffer implements for interop-phpobjects (rindow_openblas etc.)
-- rindow_opencl PHP extension 0.1.1
+- rindow_opencl PHP extension 0.1.4
 - OpenCL 1.2 drivers/libraries.
 - Windows 10
 
