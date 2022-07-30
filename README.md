@@ -13,7 +13,7 @@ Requirements
 - interop-phpobjects/polite-math 1.0.4 or later
 - LinearBuffer implements for interop-phpobjects (rindow_openblas etc.)
 - rindow_opencl PHP extension 0.1.4
-- OpenCL 1.2 drivers/libraries.
+- OpenCL 1.1/1.2 drivers/libraries.
 - Windows 10
 
 AMD GPU/APU drivers for windows are including OpenCL drivers.
