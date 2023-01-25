@@ -81,24 +81,19 @@ Ubuntu standard OpenCL drivers include:
 
 Install the CLBlast binaries
 
-Extract Archive file
+Download and Extract Archive file and Pack to deb
 ```shell
-$ xz -dc ./CLBlast-X.X.X-Linux-x64.tar.xz | tar xvf -
+$ sh ./clblast-packdeb.sh
+$ sudo apt install ./clblast_X.X.X-X+ubuntuXX.XX_amd64.deb
 ```
 
-Edit prefix item in the file ./CLBlast-X.X.X-Linux-x64/lib/pkgconfig/clblast.pc
-```
-prefix=/usr
-```
-And then Copy to /usr.
-
-Install the deb file.
+Install the deb files.
 ```shell
 $ sudo apt install ./rindow-opencl-phpX.X_X.X.X-X+ubuntuXX.XX_amd64.deb
 $ sudo apt install ./rindow-clblast-phpX.X_X.X.X-X+ubuntuXX.XX_amd64.deb
 ```
 
-ow to build from source code on Linux
+How to build from source code on Linux
 ========================================
 You can also build and use from source code.
 
@@ -161,6 +156,8 @@ Run the target php version of phpize and build.
 $ git clone https://github.com/rindow/rindow-opencl
 $ git clone https://github.com/rindow/rindow-clblast
 $ cd rindow-clblast
+$ sh ./clblast-packdeb.sh
+$ sudo apt install ./clblast_X.X.X-X+ubuntuXX.XX_amd64.deb
 $ composer update
 $ phpize8.1
 $ mv build/Makefile.global build/Makefile.global.orig
