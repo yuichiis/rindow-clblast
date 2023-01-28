@@ -36,3 +36,6 @@ cat ./clblast.pc.orig  | sed -e s/^prefix=.*$/prefix=\\/usr/ > ${TARGET}/usr/lib
 rm ./clblast.pc.orig
 rm clblast_${CLBLASTVERSION}-1+${PLATFORM}_amd64.deb
 fakeroot dpkg-deb --build pkgwork .
+rm ${FILENAME}.tar.xz
+rm -rf ${FILENAME}
+rm -rf ${TARGET}
