@@ -9,7 +9,7 @@ Rindow-CLBlast allows you to harness the power of your GPU with Rindow-Neural-Ne
 Requirements
 ============
 
-- PHP7.2 or PHP7.3 or PHP7.4 or PHP8.0 or PHP8.1
+- PHP7.2 or PHP7.3 or PHP7.4 or PHP8.0 or PHP8.1 or PHP8.2
 - interop-phpobjects/polite-math 1.0.4 or later
 - LinearBuffer implements for interop-phpobjects (rindow_openblas etc.)
 - rindow_opencl PHP extension 0.1.4
@@ -185,7 +185,7 @@ Developing PHP extensions from php7.2 to php7.4 requires VC15 instead of the lat
 - Install Microsoft Visual Studio 2019 or later installer
 - Run Installer with vs2017 build tools option.
 
-Developing PHP extensions from php8.0/8.1 requires VS16. You can use Visual Studio 2019.
+Developing PHP extensions from php8.0/8.1/8.2 requires VS16. You can use Visual Studio 2019.
 
 ### php sdk and devel-pack binaries for windows
 
