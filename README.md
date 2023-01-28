@@ -17,8 +17,10 @@ Requirements
 - Windows 10
 
 AMD GPU/APU drivers for windows are including OpenCL drivers.
-Probably you can use Intel OpenCL dirivers.
+Intel Integrated GPU for windows are including OpenCL drivers.
+Or you can use Intel OpenCL dirivers.
 Intel OpenCL drivers can be downloaded from site https://software.intel.com/content/www/us/en/develop/articles/opencl-drivers.html
+
 
 Recommend environment
 =====================
@@ -39,6 +41,7 @@ Download the binary for your version of PHP.
 - https://github.com/CNugteren/CLBlast/releases
 
 Please download the following two binaries and extract.
+The compatible CLBlast Library release number is included in the filename of the rindow-clblast pre-built archive file. If you use the wrong CLBlast Library release number DLL, it will not work properly.
 
 - The PHP extension of rindow-opencl that matches the php version.
 - The PHP extension of rindow-openblas that matches the php version.
