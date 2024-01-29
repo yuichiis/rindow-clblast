@@ -9,7 +9,7 @@ Rindow-CLBlast allows you to harness the power of your GPU with Rindow-Neural-Ne
 Requirements
 ============
 
-- PHP7.2 or PHP7.3 or PHP7.4 or PHP8.0 or PHP8.1 or PHP8.2
+- PHP7.2 or PHP7.3 or PHP7.4 or PHP8.0 or PHP8.1 or PHP8.2 or PHP8.3
 - interop-phpobjects/polite-math 1.0.4 or later
 - LinearBuffer implements for interop-phpobjects (rindow_openblas etc.)
 - rindow_opencl PHP extension 0.1.4
