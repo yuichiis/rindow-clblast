@@ -621,8 +621,8 @@ static PHP_METHOD(Math, im2col)
                 (CLBlastKernelMode)kernel_mode,
                 (size_t)channels,(size_t)height,(size_t)width,
                 (size_t)kernel_h,(size_t)kernel_w,
-                (size_t)pad_h,(size_t)pad_h,        // ** CAUTION ** Blast has the bug.
-                (size_t)stride_h,(size_t)stride_h,  // pad_h&w, stride_h&w must be the same.
+                (size_t)pad_h,(size_t)pad_w,        // ** CAUTION ** Blast has the bug.
+                (size_t)stride_h,(size_t)stride_w,  // pad_h&w, stride_h&w must be the same.
                 (size_t)dilation_h,(size_t)dilation_w,
                 im_buffer_obj->buffer, (size_t)im_offset,
                 col_buffer_obj->buffer, (size_t)col_offset,
@@ -633,8 +633,8 @@ static PHP_METHOD(Math, im2col)
                 (CLBlastKernelMode)kernel_mode,
                 (size_t)channels,(size_t)height,(size_t)width,
                 (size_t)kernel_h,(size_t)kernel_w,
-                (size_t)pad_h,(size_t)pad_h,        // ** CAUTION ** Blast has the bug.
-                (size_t)stride_h,(size_t)stride_h,  // pad_h&w, stride_h&w must be the same.
+                (size_t)pad_h,(size_t)pad_w,        // ** CAUTION ** Blast has the bug.
+                (size_t)stride_h,(size_t)stride_w,  // pad_h&w, stride_h&w must be the same.
                 (size_t)dilation_h,(size_t)dilation_w,
                 im_buffer_obj->buffer, (size_t)im_offset,
                 col_buffer_obj->buffer, (size_t)col_offset,
@@ -749,8 +749,8 @@ static PHP_METHOD(Math, col2im)
                 (CLBlastKernelMode)kernel_mode,
                 (size_t)channels,(size_t)height,(size_t)width,
                 (size_t)kernel_h,(size_t)kernel_w,
-                (size_t)pad_h,(size_t)pad_h,        // ** CAUTION ** Blast has the bug.
-                (size_t)stride_h,(size_t)stride_h,  // pad_h&w, stride_h&w must be the same.
+                (size_t)pad_h,(size_t)pad_w,        // ** CAUTION ** Blast has the bug.
+                (size_t)stride_h,(size_t)stride_w,  // pad_h&w, stride_h&w must be the same.
                 (size_t)dilation_h,(size_t)dilation_w,
                 col_buffer_obj->buffer, (size_t)col_offset,
                 im_buffer_obj->buffer, (size_t)im_offset,
@@ -761,8 +761,8 @@ static PHP_METHOD(Math, col2im)
                 (CLBlastKernelMode)kernel_mode,
                 (size_t)channels,(size_t)height,(size_t)width,
                 (size_t)kernel_h,(size_t)kernel_w,
-                (size_t)pad_h,(size_t)pad_h,        // ** CAUTION ** Blast has the bug.
-                (size_t)stride_h,(size_t)stride_h,  // pad_h&w, stride_h&w must be the same.
+                (size_t)pad_h,(size_t)pad_w,        // ** CAUTION ** Blast has the bug.
+                (size_t)stride_h,(size_t)stride_w,  // pad_h&w, stride_h&w must be the same.
                 (size_t)dilation_h,(size_t)dilation_w,
                 col_buffer_obj->buffer, (size_t)col_offset,
                 im_buffer_obj->buffer, (size_t)im_offset,
@@ -893,8 +893,8 @@ static PHP_METHOD(Math, convgemm)
                 (CLBlastKernelMode)kernel_mode,
                 (size_t)channels,(size_t)height,(size_t)width,
                 (size_t)kernel_h,(size_t)kernel_w,
-                (size_t)pad_h,(size_t)pad_h,        // ** CAUTION ** Blast has the bug.
-                (size_t)stride_h,(size_t)stride_h,  // pad_h&w, stride_h&w must be the same.
+                (size_t)pad_h,(size_t)pad_w,        // ** CAUTION ** Blast has the bug.
+                (size_t)stride_h,(size_t)stride_w,  // pad_h&w, stride_h&w must be the same.
                 (size_t)dilation_h,(size_t)dilation_w,
                 (size_t)num_kernels, (size_t)batch_count,
                 im_buffer_obj->buffer, (size_t)im_offset,
@@ -907,8 +907,8 @@ static PHP_METHOD(Math, convgemm)
                 (CLBlastKernelMode)kernel_mode,
                 (size_t)channels,(size_t)height,(size_t)width,
                 (size_t)kernel_h,(size_t)kernel_w,
-                (size_t)pad_h,(size_t)pad_h,        // ** CAUTION ** Blast has the bug.
-                (size_t)stride_h,(size_t)stride_h,  // pad_h&w, stride_h&w must be the same.
+                (size_t)pad_h,(size_t)pad_w,        // ** CAUTION ** Blast has the bug.
+                (size_t)stride_h,(size_t)stride_w,  // pad_h&w, stride_h&w must be the same.
                 (size_t)dilation_h,(size_t)dilation_w,
                 (size_t)num_kernels, (size_t)batch_count,
                 im_buffer_obj->buffer, (size_t)im_offset,
