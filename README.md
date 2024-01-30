@@ -1,3 +1,13 @@
+IMPORTANT
+=========
+Development of this program has ended.
+Please migrate to the program below instead.
+
+- https://github.com/rindow/rindow-clopen-ffi
+
+We stopped using PHP extensions because it was too difficult to prepare binary files for each PHP version and Linux version.
+
+
 Rindow CLBlast PHP extension
 ============================
 CLBlast binding for PHP.
