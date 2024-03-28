@@ -24,12 +24,10 @@ Requirements
 - LinearBuffer implements for interop-phpobjects (rindow_openblas etc.)
 - rindow_opencl PHP extension 0.1.4
 - OpenCL 1.1/1.2 drivers/libraries.
-- Windows 10
+- Windows 10 or Linux (Ubuntu) 20.04 or later
 
 AMD GPU/APU drivers for windows are including OpenCL drivers.
 Intel Integrated GPU for windows are including OpenCL drivers.
-Or you can use Intel OpenCL dirivers.
-Intel OpenCL drivers can be downloaded from site https://software.intel.com/content/www/us/en/develop/articles/opencl-drivers.html
 
 
 Recommend environment
