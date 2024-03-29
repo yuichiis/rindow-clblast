@@ -166,36 +166,14 @@ And then download binaries of CLBlast for windows from https://github.com/CNugte
 ```shell
 C:\tmp>copy rindow_opencl.dll /path/to/php-installation-path/ext
 C:\tmp>echo extension=rindow_opencl.dll >> /path/to/php-installation-path/php.ini
-C:\tmp>PATH %PATH%;/path/to/OpenBLAS-directory/bin;/path/to/CLBlast-1.x.x-Windows-x64/lib
+C:\tmp>PATH %PATH%;/path/to/OpenBLAS-directory/bin;/path/to/CLBlast-1.x.x-Windows-x64/bin
 ```
 
-### Exports OpenCL binding library
-C:\visual\studio\path>vcvars64 -vcvars_ver=14.16
-or
-C:\visual\studio\path>vcvars64
+### Download OpenCL-SDK
 
-C:\visual\studio\path>cd /path/to/OpenCL
-C:\some-path\OpenCL>mkdir lib
-C:\some-path\OpenCL>cd lib
-C:\some-path\OpenCL\lib>dumpbin /exports C:\Windows\System32\OpenCL.dll > OpenCL.def
-C:\some-path\OpenCL\lib>notepad OpenCL.def                     #### edit def file
-EXPORTS
-
-clBuildProgram
-.....
-
-C:\path\OpenCL\lib>lib /def:OpenCL.def /machine:x64
-
-The OpenCL.lib file is created.
-
-### Download OpenCL Headers
-
-- Download OpenCL Headers form https://github.com/KhronosGroup/OpenCL-Headers
+- Download OpenCL SDK form https://github.com/KhronosGroup/OpenCL-SDK/releases
 - extract and copy to opencl development directory
 
-```shell
-TMP>xcopy OpenCL-Headers-20XX.XX.XX \path\OpenCL\include /S /I
-```
 
 ### Install and setup rindow_openblas for test
 
@@ -230,7 +208,7 @@ $ PATH %PATH%;/path/to/OpenBLAS/bin;/path/to/CLBlast-devel-directory/lib
 $ cd /path/to/here
 $ composer update
 $ /path/to/php-devel-pack-x.x.x-Win32-Vxxx-x64/phpize.bat
-$ configure --enable-rindow_clblast --with-prefix=/path/to/php-installation-path --with-opencl=/path/to/OpenCL-devel-directory --with-clblast=/path/to/CLBlast-devel-directory --with-rindow_opencl=/path/to/Rindow-OpenCL-sources-directory
+$ configure --enable-rindow_clblast --with-prefix=/path/to/php-installation-path --with-opencl=/path/to/OpenCL-SDK-directory --with-clblast=/path/to/CLBlast-devel-directory --with-rindow_opencl=/path/to/Rindow-OpenCL-sources-directory
 $ nmake clean
 $ nmake
 $ nmake test
