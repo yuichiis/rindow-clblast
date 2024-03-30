@@ -35,11 +35,11 @@ cp modules/rindow_clblast.so $PKG_WORK$EXTENSION_DIR/.
 chmod 744 $PKG_WORK$EXTENSION_DIR/rindow_clblast.so
 cp conf/20-rindow_clblast.ini $PKG_WORK$INI_DIR/.
 chmod 744 $PKG_WORK$INI_DIR/20-rindow_clblast.ini
-sed -e s/%PHP_RINDOW_CLBLAST_VERSION%/$RINDOW_CLBLAST_VERSION/ debian/control | \
-sed -e s/%OS_VERSION%/$OS_VERSION/ | \
-sed -e s/%PHP_VERSION%/$PHP_VERSION/ > $PKG_WORK/DEBIAN/control
-#sed -e s@%EXTENSION_DIR%@$EXTENSION_DIR@ debian/rules | \
-#sed -e s@%INI_DIR%@$INI_DIR@ debian/rules | \
+sed -e s/%PHP_RINDOW_CLBLAST_VERSION%/$RINDOW_CLBLAST_VERSION/g debian/control | \
+sed -e s/%OS_VERSION%/$OS_VERSION/g | \
+sed -e s/%PHP_VERSION%/$PHP_VERSION/g > $PKG_WORK/DEBIAN/control
+#sed -e s@%EXTENSION_DIR%@$EXTENSION_DIR@g debian/rules | \
+#sed -e s@%INI_DIR%@$INI_DIR@g debian/rules | \
 #	> $PKG_WORK/DEBIAN/rules
 #cp debian/changelog $PKG_WORK/DEBIAN/.
 #cp debian/copyright $PKG_WORK/DEBIAN/.
