@@ -134,7 +134,7 @@ $ make test
 ```shell
 $ sudo make install
 or
-$ sh packaging.sh X.X (ex. sh packaging.sh 8.1)
+$ sh ./packaging.sh X.X (ex. sh ./packaging.sh 8.1)
 $ suto apt install ./rindow-clblast-phpX.X_X.X.X_amd64.deb (ex. ./rindow-clblast-php8.1_...)
 ```
 Add the "extension=rindow_clblast" entry to php.ini
