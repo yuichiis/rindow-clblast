@@ -24,7 +24,7 @@ Requirements
 - LinearBuffer implements for interop-phpobjects (rindow_openblas etc.)
 - rindow_opencl PHP extension 0.1.4
 - OpenCL 1.1/1.2 drivers/libraries.
-- Windows 10 or Linux (Ubuntu) 20.04 or later
+- Windows 10 or Linux (Ubuntu 20.04, Debian 12) or later
 
 AMD GPU/APU drivers for windows are including OpenCL drivers.
 Intel Integrated GPU for windows are including OpenCL drivers.
@@ -94,8 +94,8 @@ $ sudo apt install build-essential autoconf automake libtool bison re2c
 $ sudo apt install pkg-config
 $ sudo apt install phpX.X-dev (ex. php8.1-dev)
 $ sudo apt install ocl-icd-opencl-dev
-$ sudo apt install ./rindow-openblas-phpX.X_X.X.X-X+ubuntuXX.XX_amd64.deb
-$ sudo apt install ./rindow-opencl-phpX.X_X.X.X-X+ubuntuXX.XX_amd64.deb
+$ sudo apt install ./rindow-openblas-phpX.X_X.X.X_amd64.deb
+$ sudo apt install ./rindow-opencl-phpX.X_X.X.X_amd64.deb
 ```
 
 ### Build
